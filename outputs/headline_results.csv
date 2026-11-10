@@ -1,0 +1,9 @@
+question,result,target
+RQ1 Plane macro-F1 (phantom sweeps),0.379 (0.303–0.434),≥ 0.70
+RQ1 Plane-present AUC / AP (chance),0.915 / 0.339 (0.018),well above chance
+RQ2 Sweep hit@5,0.760,≥ 0.80
+RQ2 Sweep sensitivity / specificity,0.85 / 0.31,≥ 0.90 / high
+RQ4 TFLite size / CPU latency,7.2 MB / 339 ms,< 20 MB / < 200 ms
+RQ6 Breech flag: accuracy (95% CI) / AUC,0.78 (0.69–0.87) / 0.86,above chance (0.54)
+RQ6 Shortcut check: best 'no head' rule AUC,0.61,clearly below the model's 0.86
+Defect screening (exploratory): normal vs abnormal AUC / flagged sensitivity / specificity,1.00 / 0.90 / 1.00,sensitivity ≥ 0.90 (screening)

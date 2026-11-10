@@ -1,0 +1,2 @@
+model,plane macro-F1,95% CI,per-fold F1,plane-present AUC,plane-present AP,sweep hit@5,sweep sensitivity,sweep specificity
+Dummy only,0.3790289656087133,0.303–0.434,0.28 0.51 0.44 0.28 0.44,0.9147585808355004,0.33868916170984836,0.7604166666666666,0.8518518518518519,0.3055555555555556

@@ -1,0 +1,22 @@
+# Python environments and local tooling
+.venv/
+.venv311/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local training data and downloaded archives
+cache/
+NatalIA PBFUS1/
+NatalIA PBFUS1.zip
+Fetal Brain Abnormalities Ultrasound.v1i.multiclass/
+Fetal Brain Abnormalities Ultrasound.v1i.multiclass.zip
+
+# Local-only training exports; deployment uses outputs/taswira_plane_finder.tflite
+natalia_plane_model.keras
+natalia_plane_model.tflite
+outputs/*.keras
+
+# Generated notebook/runtime artifacts
+*.log
