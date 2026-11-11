@@ -64,17 +64,21 @@ def main() -> None:
     .hero {padding: 1.4rem 1.6rem; border-radius: 1rem; background: linear-gradient(135deg, #edf7f6, #f7fbff); border: 1px solid #d7e8e7; margin-bottom: 1.2rem;}
     .hero h1 {margin: 0 0 .35rem 0; color: #123f4a;}
     .hero p {margin: 0; color: #45626a; font-size: 1.05rem;}
-    .step {padding: .8rem 1rem; border-left: 4px solid #2a9d8f; background: #f8fbfb; margin: .35rem 0;}
+    .upload-guide {padding: 1.1rem 1.25rem; border: 1px solid #9ccbc5; border-radius: .8rem; background: #f3fbfa; color: #18343b; margin: 1rem 0 1.25rem 0;}
+    .upload-guide h3 {color: #123f4a; margin: 0 0 .75rem 0;}
+    .step {padding: .8rem 1rem; border-left: 4px solid #2a9d8f; background: #ffffff; color: #18343b; margin: .35rem 0;}
     </style>
     <div class="hero"><h1>🩺 Taswira Ultrasound Assistant</h1><p>Upload ultrasound images to identify the type of standard view shown.</p></div>
     """, unsafe_allow_html=True)
     st.info("This is a decision-support demonstration. It does not diagnose, assess the baby's health, replace a qualified sonographer, or make referral decisions.")
-    with st.expander("Before you upload: what do I need?", expanded=True):
-        st.markdown("""
-        <div class="step"><b>1. Use an ultrasound image</b><br>Upload a clear frame, not a document, spreadsheet, video, or ZIP file.</div>
-        <div class="step"><b>2. Supported formats</b><br>PNG, JPG/JPEG, BMP, TIF/TIFF. The image should show one ultrasound view with the anatomy visible.</div>
-        <div class="step"><b>3. Choose the right option</b><br>Use <b>One frame</b> for a single image, or <b>Multiple frames</b> when you have several images from one sweep.</div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <section class="upload-guide">
+      <h3>Before you upload: what do I need?</h3>
+      <div class="step"><b>1. Use an ultrasound image</b><br>Upload a clear frame, not a document, spreadsheet, video, or ZIP file.</div>
+      <div class="step"><b>2. Supported formats</b><br>PNG, JPG/JPEG, BMP, TIF/TIFF. The image should show one ultrasound view with the anatomy visible.</div>
+      <div class="step"><b>3. Choose the right option</b><br>Use <b>One frame</b> for a single image, or <b>Multiple frames</b> when you have several images from one sweep.</div>
+    </section>
+    """, unsafe_allow_html=True)
 
     ready, status = artifact_status()
     with st.sidebar:
